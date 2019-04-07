@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "captain",
+      "image": "../images/captain.jpg",
+      "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "hulk",
+        "image": "../images/hulk.jpg",
+        "clicked": false
+      },
+      {
+        "id": 3,
+        "name": "iron",
+        "image": "../images/iron.jpg",
+        "clicked": false
+      },
+      {
+        "id": 4,
+        "name": "panther",
+        "image": "../images/panther.jpg",
+        "clicked": false
+      },
+      {
+        "id": 5,
+        "name": "thor",
+        "image": "../images/thor.jpg",
+        "clicked": false
+      },
+      {
+        "id": 6,
+        "name": "widow",
+        "image": "../images/widow.jpg",
+        "clicked": false
+      }
+]
