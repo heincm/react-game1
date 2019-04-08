@@ -9,7 +9,7 @@ class App extends Component {
   state = {
     avengers,
     count: 0,
-    isClicked: false
+    isClicked: []
   }
 
   shuffle(array) {
@@ -20,12 +20,22 @@ class App extends Component {
     return array;
   }
 
-  handleOnClick = () => {
+  handleOnClick = (event) => {
+    let currentImage = event.target.alt
+   // let alreadyClicked = this.state.clickedCar.indexOf(currentImage) > -1
     this.setState({ isClicked: true, count: this.state.count + 1 });
-    console.log(this.state.isClicked)
-    console.log(this.state.count)
+    console.log(this)
+    console.log("clicked state " + this.state.isClicked)
+    console.log(event.target)
+    console.log(currentImage)
+    this.setState({avengers: this.shuffle(avengers)})
   }
 
+  alreadyClicked() {
+    if (this.clicked) {
+      console.log()
+    }
+  }
 
   render() {
     return (
@@ -39,7 +49,8 @@ class App extends Component {
               key={avenger.id}
               name={avenger.name}
               image={avenger.image}
-              handleOnClick={this.handleOnClick} />
+              handleOnClick={this.handleOnClick} 
+              clicked={avenger.clicked}/>
           ))}
         </Wrapper>
       </>
