@@ -8,7 +8,8 @@ class App extends Component {
 
   state = {
     avengers: this.shuffle(avengers),
-    count: 0,
+    score: 0,
+    highScore: 0,
     isClicked: []
   }
 
@@ -22,21 +23,30 @@ class App extends Component {
 
   handleOnClick = (event) => {
     let currentImage = event.target.alt
-   // let alreadyClicked = this.state.clickedCar.indexOf(currentImage) > -1
     this.setState({ isClicked: this.state.isClicked.concat(currentImage), count: this.state.count + 1 });
-    this.setState({avengers: this.shuffle(avengers)})
+    this.setState({ avengers: this.shuffle(avengers) })
+    this.alreadyClicked(currentImage)
   }
 
-  alreadyClicked() {
-    if (this.clicked) {
-      console.log()
+  alreadyClicked = (image) => {
+    if (this.state.isClicked.includes(image)) {
+      console.log('already there, bruh')
+      return this.gameOver()
     }
+    this.setState({score: this.state.score + 1})
+  }
+
+  gameOver() {
+    this.setState({score: 0})
+    this.setState({isClicked: []})
   }
 
   render() {
     return (
       <>
-        <Navbar count={this.state.count}/>
+        <Navbar 
+        count={this.state.score} 
+        highScore={this.state.highScore}/>
         <Wrapper>
           {this.state.avengers.map(avenger => (
             <AvengerCard
@@ -44,8 +54,8 @@ class App extends Component {
               key={avenger.id}
               name={avenger.name}
               image={avenger.image}
-              handleOnClick={this.handleOnClick} 
-              clicked={avenger.clicked}/>
+              handleOnClick={this.handleOnClick}
+              clicked={avenger.clicked} />
           ))}
         </Wrapper>
       </>
