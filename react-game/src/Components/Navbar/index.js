@@ -8,6 +8,7 @@ function Navbar(props) {
     <div className="card-body">
       <p className="card-text">Score: {props.count}</p>
       <p className="card-text">High Score: {props.highScore}</p>
+      <p className="card-text">{props.message}</p>
     </div>
   );
 }
