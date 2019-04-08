@@ -10,7 +10,8 @@ class App extends Component {
     avengers: this.shuffle(avengers),
     score: 0,
     highScore: 0,
-    isClicked: []
+    isClicked: [],
+    message: "Click in image to begin"
   }
 
   shuffle(array) {
@@ -21,32 +22,42 @@ class App extends Component {
     return array;
   }
 
-  handleOnClick = (event) => {
-    let currentImage = event.target.alt
-    this.setState({ isClicked: this.state.isClicked.concat(currentImage), count: this.state.count + 1 });
-    this.setState({ avengers: this.shuffle(avengers) })
-    this.alreadyClicked(currentImage)
+  handleOnClick = event => {
+    let currentImage = event.target.alt;
+    this.checkClicked(currentImage);
+    this.setState({
+      isClicked: this.state.isClicked.concat(currentImage),
+      highScore: (this.state.highScore <= this.state.score) ? this.state.score : this.state.highScore,
+      avengers: this.shuffle(avengers)
+    });
   }
 
-  alreadyClicked = (image) => {
+  /* Check to see if an image has already been clicked */
+  checkClicked = image => {
     if (this.state.isClicked.includes(image)) {
-      console.log('already there, bruh')
-      return this.gameOver()
+      return this.gameOver();
     }
-    this.setState({score: this.state.score + 1})
+    this.setState({
+      score: this.state.score + 1,
+      message: "Nice work! Keep going!"
+    })
   }
 
   gameOver() {
-    this.setState({score: 0})
-    this.setState({isClicked: []})
+    this.setState({
+      score: 0,
+      isClicked: [],
+      message: "You already clicked that one. Game Over. Click again!"
+    })
   }
 
   render() {
     return (
       <>
-        <Navbar 
-        count={this.state.score} 
-        highScore={this.state.highScore}/>
+        <Navbar
+          count={this.state.score}
+          highScore={this.state.highScore}
+          message={this.state.message} />
         <Wrapper>
           {this.state.avengers.map(avenger => (
             <AvengerCard
