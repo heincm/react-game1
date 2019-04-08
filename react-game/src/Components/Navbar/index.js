@@ -6,7 +6,8 @@ import React from "react";
 function Navbar(props) {
   return (
     <div className="card-body">
-      <p className="card-text">Click Count: {props.count}</p>
+      <p className="card-text">Score: {props.count}</p>
+      <p className="card-text">High Score: {props.highScore}</p>
     </div>
   );
 }
