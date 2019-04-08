@@ -24,10 +24,6 @@ class App extends Component {
     let currentImage = event.target.alt
    // let alreadyClicked = this.state.clickedCar.indexOf(currentImage) > -1
     this.setState({ isClicked: this.state.isClicked.concat(currentImage), count: this.state.count + 1 });
-    console.log(this)
-    console.log("clicked state " + this.state.isClicked)
-    console.log(event.target)
-    console.log("current image " + currentImage)
     this.setState({avengers: this.shuffle(avengers)})
   }
 
