@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   handleOnClick = event => {
-    let currentImage = event.target.alt;
+    const currentImage = event.target.alt;
     this.checkClicked(currentImage);
     this.setState({
       isClicked: this.state.isClicked.concat(currentImage),
@@ -34,7 +34,7 @@ class App extends Component {
 
   /* Check to see if an image has already been clicked */
   checkClicked = image => {
-    if (this.state.isClicked.includes(image)) {
+  if (this.state.isClicked.includes(image)) {
       return this.gameOver();
     }
     this.setState({

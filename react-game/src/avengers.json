@@ -1,38 +1,62 @@
 [
-    {
-      "id": 1,
-      "name": "captain",
-      "image": "../images/captain.jpg",
-      "clicked": false
-    },
-    {
-        "id": 2,
-        "name": "hulk",
-        "image": "../images/hulk.jpg",
-        "clicked": false
-      },
-      {
-        "id": 3,
-        "name": "iron",
-        "image": "../images/iron.jpg",
-        "clicked": false
-      },
-      {
-        "id": 4,
-        "name": "panther",
-        "image": "../images/panther.jpg",
-        "clicked": false
-      },
-      {
-        "id": 5,
-        "name": "thor",
-        "image": "../images/thor.jpg",
-        "clicked": false
-      },
-      {
-        "id": 6,
-        "name": "widow",
-        "image": "../images/widow.jpg",
-        "clicked": false
-      }
+  {
+    "id": 1,
+    "name": "captain",
+    "image": "../images/captain.jpg"
+  },
+  {
+    "id": 2,
+    "name": "hulk",
+    "image": "../images/hulk.jpg"
+  },
+  {
+    "id": 3,
+    "name": "iron",
+    "image": "../images/iron.jpg"
+  },
+  {
+    "id": 4,
+    "name": "panther",
+    "image": "../images/panther.jpg"
+  },
+  {
+    "id": 5,
+    "name": "thor",
+    "image": "../images/thor.jpg"
+  },
+  {
+    "id": 6,
+    "name": "widow",
+    "image": "../images/widow.jpg"
+  },
+  {
+    "id": 7,
+    "name": "groot",
+    "image": "../images/groot.jpg"
+  },
+  {
+    "id": 8,
+    "name": "rocket",
+    "image": "../images/rocket.jpg"
+  },
+  {
+    "id": 9,
+    "name": "strange",
+    "image": "../images/strange.jpg"
+  },
+  {
+    "id":10,
+    "name": "starlord",
+    "image": "../images/starlord.jpg"
+  },
+  {
+    "id": 11,
+    "name": "hawkeye",
+    "image": "../images/hawkeye.jpg"
+  },
+  {
+    "id": 12,
+    "name": "vision",
+    "image": "../images/vision.jpg"
+  }
 ]
