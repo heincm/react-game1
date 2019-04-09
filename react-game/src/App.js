@@ -24,32 +24,24 @@ class App extends Component {
 
   handleOnClick = event => {
     const currentImage = event.target.alt;
-    this.checkClicked(currentImage);
-    this.setState({
-      isClicked: this.state.isClicked.concat(currentImage),
-      highScore: (this.state.highScore <= this.state.score) ? this.state.score : this.state.highScore,
-      avengers: this.shuffle(avengers)
-    });
-  }
-
-  /* Check to see if an image has already been clicked */
-  checkClicked = image => {
-  if (this.state.isClicked.includes(image)) {
-      return this.gameOver();
+    if (this.state.isClicked.includes(currentImage)) {
+      this.setState({
+        score: 0,
+        isClicked: [],
+        message: "You already clicked that one. Game Over. Click again!",
+        highScore: (this.state.highScore <= this.state.score) ? this.state.score : this.state.highScore,
+      })
     }
-    this.setState({
-      score: this.state.score + 1,
-      message: "Nice work! Keep going!"
-    })
+    else {
+      this.setState({
+        isClicked: this.state.isClicked.concat(currentImage),
+        score: this.state.score + 1,
+        message: "Nice work! Keep going!",
+        avengers: this.shuffle(avengers)
+      })
+    }
   }
 
-  gameOver() {
-    this.setState({
-      score: 0,
-      isClicked: [],
-      message: "You already clicked that one. Game Over. Click again!"
-    })
-  }
 
   render() {
     return (
