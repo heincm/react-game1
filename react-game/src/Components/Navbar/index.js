@@ -1,15 +1,18 @@
 import React from "react";
+import "./style.css";
 
-// If we want a child component to update or pass data to its parent, we can create a method inside the parent for the update
-// Then bind the method to the parent, and pass it to the child as a prop
 
 function Navbar(props) {
   return (
-    <div className="card-body">
-      <p className="card-text">Score: {props.count}</p>
-      <p className="card-text">High Score: {props.highScore}</p>
-      <p className="card-text">{props.message}</p>
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-info container">
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item">Score: {props.count}</li>
+          <li className="nav-item">High Score: {props.highScore}</li>
+          <li className="nav-item">{props.message}</li>
+        </ul>
+      </div>
+    </nav>
   );
 }
 

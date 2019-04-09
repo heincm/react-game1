@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Wrapper from './Components/Wrapper'
 import AvengerCard from './Components/AvengerCard'
 import Navbar from './Components/Navbar'
+import Jumbotron from './Components/Jumbotron'
 import avengers from './avengers.json'
 
 class App extends Component {
@@ -46,6 +47,7 @@ class App extends Component {
   render() {
     return (
       <>
+        <Jumbotron />
         <Navbar
           count={this.state.score}
           highScore={this.state.highScore}
