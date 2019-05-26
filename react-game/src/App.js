@@ -12,7 +12,7 @@ class App extends Component {
     score: 0,
     highScore: 0,
     isClicked: [],
-    message: "Click in image to begin"
+    message: "Click an image to begin"
   }
 
   shuffle(array) {
@@ -31,6 +31,7 @@ class App extends Component {
         isClicked: [],
         message: "You already clicked that one. Game Over. Click again!",
         highScore: (this.state.highScore <= this.state.score) ? this.state.score : this.state.highScore,
+        avengers: this.shuffle(avengers)
       })
     }
     else {
