@@ -2,9 +2,9 @@ import React from "react";
 import "./style.css";
 
 
-function Navbar(props) {
+function Scorebar(props) {
   return (
-    <nav className="jumbotron jumbotron-light container">
+    <nav className="jumbotron jumbotron-light container" id="scoreJumbo">
       <div>
        
          <p>Score: {props.count}</p>
@@ -16,4 +16,4 @@ function Navbar(props) {
   );
 }
 
-export default Navbar;
+export default Scorebar;

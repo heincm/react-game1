@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Wrapper from './Components/Wrapper'
 import AvengerCard from './Components/AvengerCard'
-import Navbar from './Components/Navbar'
+import Scorebar from './Components/Scorebar'
 import Jumbotron from './Components/Jumbotron'
 import avengers from './avengers.json'
 
@@ -49,7 +49,7 @@ class App extends Component {
     return (
       <>
         <Jumbotron />
-        <Navbar
+        <Scorebar
           count={this.state.score}
           highScore={this.state.highScore}
           message={this.state.message} />
