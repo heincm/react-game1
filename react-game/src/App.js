@@ -56,7 +56,6 @@ class App extends Component {
         <Wrapper>
           {this.state.avengers.map(avenger => (
             <AvengerCard
-              id={avenger.id}
               key={avenger.id}
               name={avenger.name}
               image={avenger.image}
