@@ -4,15 +4,17 @@ import "./style.css";
 
 function Scorebar(props) {
   return (
-    <nav className="jumbotron jumbotron-light container" id="scoreJumbo">
-      <div>
-       
-         <p>Score: {props.count}</p>
-         <p>High Score: {props.highScore}</p>
-         <p>{props.message}</p>
-    
+    <div className="container" id="scoreJumbo">
+      <div className="row">
+        <div className="col-lg-6">
+          <p className="text-center font-weight-bold">Score: {props.count}</p>
+        </div>
+        <div className="col-lg-6">
+          <p className="text-center font-weight-bold">High Score: {props.highScore}</p>
+        </div>
       </div>
-    </nav>
+      <p className="text-center font-weight-bold">{props.message}</p>
+    </div>
   );
 }
 
