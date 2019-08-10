@@ -13,7 +13,7 @@ function Scorebar(props) {
           <p className="text-center font-weight-bold">High Score: {props.highScore}</p>
         </div>
       </div>
-      <p className="text-center font-weight-bold">{props.message}</p>
+      <p className="text-center font-weight-bold" style={{color:props.color}}>{props.message}</p>
     </div>
   );
 }

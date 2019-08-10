@@ -12,7 +12,8 @@ class App extends Component {
     score: 0,
     highScore: 0,
     isClicked: [],
-    message: "Click an image to begin"
+    message: "Click an image to begin",
+    color: "black"
   }
 
   shuffle(array) {
@@ -31,7 +32,8 @@ class App extends Component {
         isClicked: [],
         message: "You already clicked that one. Game Over. Click again!",
         highScore: (this.state.highScore <= this.state.score) ? this.state.score : this.state.highScore,
-        avengers: this.shuffle(avengers)
+        avengers: this.shuffle(avengers),
+        color: "red"
       })
     }
     else {
@@ -39,7 +41,8 @@ class App extends Component {
         isClicked: this.state.isClicked.concat(currentImage),
         score: this.state.score + 1,
         message: "Nice work! Keep going!",
-        avengers: this.shuffle(avengers)
+        avengers: this.shuffle(avengers),
+        color: "green"
       })
     }
   }
@@ -49,13 +52,14 @@ class App extends Component {
     return (
       <>
         <Jumbotron>
-        <h1 className="text-white display-3">Avenger Clicky Game!</h1>
-            <p className="text-white lead">Try not to click the same avenger twice.</p>
+          <h1 className="text-white display-3">Avenger Clicky Game!</h1>
+          <p className="text-white lead">Try not to click the same avenger twice.</p>
         </Jumbotron>
         <Scorebar
           count={this.state.score}
           highScore={this.state.highScore}
-          message={this.state.message} />
+          message={this.state.message}
+          color={this.state.color} />
         <Wrapper>
           {this.state.avengers.map(avenger => (
             <AvengerCard
