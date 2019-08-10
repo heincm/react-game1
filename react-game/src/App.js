@@ -48,7 +48,10 @@ class App extends Component {
   render() {
     return (
       <>
-        <Jumbotron />
+        <Jumbotron>
+        <h1 className="text-white display-3">Avenger Clicky Game!</h1>
+            <p className="text-white lead">Try not to click the same avenger twice.</p>
+        </Jumbotron>
         <Scorebar
           count={this.state.score}
           highScore={this.state.highScore}
