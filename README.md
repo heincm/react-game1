@@ -4,7 +4,7 @@
 
 Users will see their current score, high score, and a message inviting them to play the game. 
 
-![Welcome](./react-game/public/score.jpeg)
+![Welcome](./public/score.jpeg)
 
 ### Starting the Game
 To start the game, a user can click on any image. 
@@ -19,4 +19,4 @@ Upon clicking on an image for the second time in the same round, the game is ove
 Below is an example of what typical game play may look like.
 
 
-![Gameplay](./react-game/public/gameplay.gif)
+![Gameplay](./public/gameplay.gif)
