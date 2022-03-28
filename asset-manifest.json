@@ -1,13 +1,13 @@
 {
   "main.css": "/react-game/static/css/main.fffa3370.chunk.css",
-  "main.js": "/react-game/static/js/main.8fc6d99f.chunk.js",
-  "main.js.map": "/react-game/static/js/main.8fc6d99f.chunk.js.map",
+  "main.js": "/react-game/static/js/main.d9617441.chunk.js",
+  "main.js.map": "/react-game/static/js/main.d9617441.chunk.js.map",
   "runtime~main.js": "/react-game/static/js/runtime~main.ef933c85.js",
   "runtime~main.js.map": "/react-game/static/js/runtime~main.ef933c85.js.map",
   "static/js/2.884c28c3.chunk.js": "/react-game/static/js/2.884c28c3.chunk.js",
   "static/js/2.884c28c3.chunk.js.map": "/react-game/static/js/2.884c28c3.chunk.js.map",
   "index.html": "/react-game/index.html",
-  "precache-manifest.28fec192df73f1165ed9509c8cd9fb3b.js": "/react-game/precache-manifest.28fec192df73f1165ed9509c8cd9fb3b.js",
+  "precache-manifest.d24e9fd675d5bb4489b3e066e8b716e0.js": "/react-game/precache-manifest.d24e9fd675d5bb4489b3e066e8b716e0.js",
   "service-worker.js": "/react-game/service-worker.js",
   "static/css/main.fffa3370.chunk.css.map": "/react-game/static/css/main.fffa3370.chunk.css.map"
 }
