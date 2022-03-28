@@ -2,61 +2,61 @@
   {
     "id": 1,
     "name": "Captain America",
-    "image": "/images/captain_america.png"
+    "image": "https://raw.githubusercontent.com/heincm/react-game/master/public/images/captain_america.png"
   },
   {
     "id": 2,
     "name": "The Hulk",
-    "image": "/images/hulk.jpeg"
+    "image": "./images/hulk.jpeg"
   },
   {
     "id": 3,
     "name": "Iron Man",
-    "image": "/images/iron_man.jpeg"
+    "image": "./images/iron_man.jpeg"
   },
   {
     "id": 4,
     "name": "Black Panther",
-    "image": "/images/black_panther.jpg"
+    "image": "./images/black_panther.jpg"
   },
   {
     "id": 5,
     "name": "Thor",
-    "image": "/images/thor.jpeg"
+    "image": "./images/thor.jpeg"
   },
   {
     "id": 6,
     "name": "Black Widow",
-    "image": "/images/black_widow.jpeg"
+    "image": "./images/black_widow.jpeg"
   },
   {
     "id": 7,
     "name": "Groot",
-    "image": "/images/groot.jpeg"
+    "image": "./images/groot.jpeg"
   },
   {
     "id": 8,
     "name": "Rocket Raccoon",
-    "image": "/images/rocket.jpeg"
+    "image": "./images/rocket.jpeg"
   },
   {
     "id": 9,
     "name": "Dr. Strange",
-    "image": "/images/dr_strange.jpg"
+    "image": "./images/dr_strange.jpg"
   },
   {
     "id":10,
     "name": "Starlord",
-    "image": "/images/starlord.avif"
+    "image": "./images/starlord.avif"
   },
   {
     "id": 11,
     "name": "Hawkeye",
-    "image": "/images/hawkeye.jpeg"
+    "image": "./images/hawkeye.jpeg"
   },
   {
     "id": 12,
     "name": "Vision",
-    "image": "/images/vision.jpeg"
+    "image": "./images/vision.jpeg"
   }
 ]
